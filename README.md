@@ -4,19 +4,19 @@ GitSleuth is a Flask-based web application that allows users to interactively ex
 
 ## Key Features
 
-### Clone GitHub Repositories
+- **Clone GitHub Repositories**
     - User enters a GitHub URL.
     - Repo is cloned locally (if not already cloned).
     - Prevents duplicate cloning by checking if the repo already exists.
-### Vector Indexing of Source Files
+- **Vector Indexing of Source Files**
     - Scans the repo for relevant files (.py, .js, .ts, .md).
     - Extracts file content and metadata (file paths).
     - Stores embeddings in ChromaDB using text-embedding-3-small.
-### Query with RAG Pipeline
+- **Query with RAG Pipeline**
     - User can ask natural language questions about the repository.
     - The app retrieves the most relevant repo files from ChromaDB.
     - Context is passed to OpenAI’s GPT-4o-mini for generating answers.
-### Conversational Interface
+- **Conversational Interface**
     - Maintains chat history in the Flask session.
     - User sees previous queries and assistant responses.
     - Chatbox is scrollable and styled for readability.
