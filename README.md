@@ -34,3 +34,8 @@ GitSleuth is a Flask-based web application that allows users to interactively ex
 - Retrieval → Relevant repo files are fetched from ChromaDB.
 - Answer Generation → Context + question is fed to OpenAI LLM → Answer returned.
 - Chat History → Displayed in a scrollable chatbox.
+
+## Application Walkthrough
+![Screen1](images/main3.JPG)
+![Screen2](images/main.JPG)
+![Screen3](images/main2.JPG)
