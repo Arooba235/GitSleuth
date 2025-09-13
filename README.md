@@ -35,6 +35,22 @@ GitSleuth is a Flask-based web application that allows users to interactively ex
 - Answer Generation → Context + question is fed to OpenAI LLM → Answer returned.
 - Chat History → Displayed in a scrollable chatbox.
 
+## Usage
+- **Clone the Repository**
+    ```bash
+        git clone https://github.com/yourusername/GitSleuth.git
+        cd GitSleuth
+        ```
+- **Set Up Environment Variables**
+    - Create a `.env` file in the project root.
+        - Add your OpenAI API key:
+        ```
+        OPENAI_API_KEY=your_openai_api_key_here
+        ```
+- **Run the Application**
+    ```bash
+    python app.py
+    ```
 ## Application Walkthrough
 ![Screen1](images/main3.JPG)
 ![Screen2](images/main.JPG)
