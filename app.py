@@ -4,6 +4,8 @@ import subprocess
 import chromadb
 from chromadb.utils import embedding_functions
 from openai import OpenAI
+import markdown
+from markdown.extensions import codehilite
 from dotenv import load_dotenv
 load_dotenv()
     
@@ -127,7 +129,8 @@ def query_page():
             )
 
             answer = response.choices[0].message.content
-
+        print("answer",answer)
+        answer = markdown.markdown(answer, extensions=["fenced_code", "codehilite"])
         history = session["chat_history"]
         history.append({"role": "user", "content": user_query})
         history.append({"role": "assistant", "content": answer})

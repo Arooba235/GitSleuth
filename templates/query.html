@@ -61,6 +61,22 @@
     button:hover {
         background: #3c49b8;
     }
+    /* code {
+        background: #000000;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 14px;
+    }
+
+    pre {
+        background: #000000;
+        color: #f8f8f2;
+        padding: 12px;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-size: 14px;
+    } */
 
     </style>
 </head>
@@ -71,7 +87,8 @@
         <div class="chat-box">
             {% for msg in history %}
                 <div class="message {{ msg.role }}">
-                    <strong>{{ msg.role|capitalize }}:</strong> {{ msg.content }}
+                    <strong>{{ msg.role.capitalize() }}:</strong> 
+                    <div class="message">{{ msg.content | safe }}</div>
                 </div>
             {% endfor %}
         </div>
