@@ -38,15 +38,15 @@ GitSleuth is a Flask-based web application that allows users to interactively ex
 ## Usage
 - **Clone the Repository**
     ```bash
-        git clone https://github.com/yourusername/GitSleuth.git
-        cd GitSleuth
-        ```
+    git clone https://github.com/yourusername/GitSleuth.git
+    cd GitSleuth
+    ```
 - **Set Up Environment Variables**
     - Create a `.env` file in the project root.
-        - Add your OpenAI API key:
-        ```
-        OPENAI_API_KEY=your_openai_api_key_here
-        ```
+    - Add your OpenAI API key:
+    ```
+    OPENAI_API_KEY=your_openai_api_key_here
+    ```
 - **Run the Application**
     ```bash
     python app.py
